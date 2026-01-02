@@ -73,7 +73,7 @@ export interface PortfolioConfig {
 const content = {
   en: {
     personal: {
-      name: "Joane Smith",
+      name: "Diego Castelblanco",
       title: "Software Engineer",
       subtitle: "Building elegant solutions with modern technologies",
       greeting: "Hello, I'm",
@@ -81,17 +81,17 @@ const content = {
       cvUrl: "/path-to-cv.pdf"
     },
     about: {
-      description: "I'm a passionate software engineer with over 5 years of experience building web applications and digital solutions. I specialize in React, TypeScript, and modern web technologies, with a focus on creating user-friendly, scalable, and maintainable applications.",
-      experience: "My journey in software development started with a curiosity about how things work behind the scenes. Today, I help businesses transform their ideas into digital reality, working with cross-functional teams to deliver high-quality software solutions.",
+      description: "Software Development Technologist and Systems Engineering student with experience in frontend web development, backend scripting with Python, and data processing using ETL workflows. I have built and deployed web projects using modern development practices, Linux-based environments, and Git version control, focusing on clarity, scalability, and maintainability.",
+      experience: "My journey in software development started with a curiosity about how systems and applications work behind the scenes. Today, as a Systems Engineering student, I build web applications and software solutions through hands-on projects, focusing on clean code, continuous learning, and turning ideas into functional digital products.",
       highlights: [
         {
           icon: "Code2",
-          title: "5+ Years",
-          description: "Professional Experience"
+          title: "2 Years",
+          description: "Experience"
         },
         {
           icon: "Users",
-          title: "20+ Projects",
+          title: "5 Projects",
           description: "Successfully Delivered"
         },
         {
@@ -171,32 +171,32 @@ const content = {
       ]
     },
     meta: {
-      title: "Joane Smith - Software Engineer",
-      description: "Personal portfolio of Joane Smith, a software engineer specializing in React, TypeScript, and modern web technologies.",
+      title: "Diego Castelblanco - Software Engineer",
+      description: "Personal portfolio of Diego Castelblanco, a system engineerspecializing in React, TypeScript, and modern web technologies.",
       keywords: ["software engineer", "react", "typescript", "web development", "portfolio"]
     }
   },
   es: {
     personal: {
-      name: "Joane Smith",
-      title: "Ingeniera de Software",
+      name: "Diego Castelblanco",
+      title: "Ingeniero de Sistemas",
       subtitle: "Construyendo soluciones elegantes con tecnologías modernas",
       greeting: "Hola, soy",
       profilePhoto: "/profile-photo.png",
       cvUrl: "/path-to-cv.pdf"
     },
     about: {
-      description: "Soy una ingeniera de software apasionada con más de 5 años de experiencia construyendo aplicaciones web y soluciones digitales. Me especializo en React, TypeScript y tecnologías web modernas, con un enfoque en crear aplicaciones amigables, escalables y mantenibles.",
-      experience: "Mi viaje en el desarrollo de software comenzó con la curiosidad sobre cómo funcionan las cosas detrás de escena. Hoy, ayudo a las empresas a transformar sus ideas en realidad digital, trabajando con equipos multifuncionales para entregar soluciones de software de alta calidad.",
+      description: "Soy estudiante de Ingeniería de Sistemas y Tecnólogo en Desarrollo de Software, con experiencia en el desarrollo de aplicaciones web y soluciones digitales. Me enfoco en la creación de interfaces funcionales utilizando HTML, CSS y JavaScript, y cuento con bases en lógica backend con Python y SQL",
+      experience: "Mi camino en el desarrollo de software comenzó con la curiosidad por entender cómo funcionan los sistemas detrás de escena. Actualmente desarrollo proyectos reales, transformando ideas en soluciones digitales bien estructuradas, con énfasis en el aprendizaje continuo, el código limpio y la mantenibilidad.",
       highlights: [
         {
           icon: "Code2",
-          title: "5+ Años",
-          description: "Experiencia Profesional"
+          title: "2 Años",
+          description: "Experiencia"
         },
         {
           icon: "Users",
-          title: "20+ Proyectos",
+          title: "5 Proyectos",
           description: "Entregados Exitosamente"
         },
         {
@@ -276,8 +276,8 @@ const content = {
       ]
     },
     meta: {
-      title: "Joane Smith - Ingeniera de Software",
-      description: "Portfolio personal de Joane Smith, una ingeniera de software especializada en React, TypeScript y tecnologías web modernas.",
+      title: "Diego Castelblanco - Ingeniera de Software",
+      description: "Portfolio personal de Diego Castelblanco, una ingeniera de software especializada en React, TypeScript y tecnologías web modernas.",
       keywords: ["ingeniera de software", "react", "typescript", "desarrollo web", "portfolio"]
     }
   }
@@ -285,7 +285,7 @@ const content = {
 
 export const portfolioConfig: PortfolioConfig = {
   personal: {
-    name: "Joane Smith",
+    name: "Diego Castelblanco",
     title: "Software Engineer",
     subtitle: "Building elegant solutions with modern technologies",
     greeting: "Hello, I'm",
@@ -306,7 +306,7 @@ export const portfolioConfig: PortfolioConfig = {
   },
 
   about: {
-    description: "I'm a passionate software engineer with over 5 years of experience building web applications and digital solutions. I specialize in React, TypeScript, and modern web technologies, with a focus on creating user-friendly, scalable, and maintainable applications.",
+    description: "I'm a passionate system engineerwith over 5 years of experience building web applications and digital solutions. I specialize in React, TypeScript, and modern web technologies, with a focus on creating user-friendly, scalable, and maintainable applications.",
     experience: "My journey in software development started with a curiosity about how things work behind the scenes. Today, I help businesses transform their ideas into digital reality, working with cross-functional teams to deliver high-quality software solutions.",
     highlights: [
       {
@@ -404,8 +404,8 @@ export const portfolioConfig: PortfolioConfig = {
   },
 
   meta: {
-    title: "Joane Smith - Software Engineer",
-    description: "Personal portfolio of Joane Smith, a software engineer specializing in React, TypeScript, and modern web technologies.",
+    title: "Diego Castelblanco - Software Engineer",
+    description: "Personal portfolio of Diego Castelblanco, a system engineerspecializing in React, TypeScript, and modern web technologies.",
     keywords: ["software engineer", "react", "typescript", "web development", "portfolio"]
   }
 };

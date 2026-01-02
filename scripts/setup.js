@@ -354,7 +354,7 @@ export { content };
   // Update the HTML title
   const htmlPath = path.join(__dirname, '..', 'index.html');
   let htmlContent = fs.readFileSync(htmlPath, 'utf8');
-  htmlContent = htmlContent.replace(/Joane Smith/g, name);
+  htmlContent = htmlContent.replace(/Diego Castelblanco/g, name);
   htmlContent = htmlContent.replace(/Software Engineer/g, title);
   fs.writeFileSync(htmlPath, htmlContent);
 
