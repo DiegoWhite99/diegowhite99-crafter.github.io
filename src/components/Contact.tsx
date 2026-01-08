@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import emailjs from 'emailjs-com';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -28,18 +29,46 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: t('contact.success'),
-      description: t('contact.successDescription'),
-    });
 
-    setFormData({ name: '', email: '', message: '' });
-    setIsSubmitting(false);
+    const { name, email, message } = formData;
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      toast({
+        title: 'Error',
+        description: 'Email service not configured. Configure EmailJS keys in env.',
+      });
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_email: 'diegofer.cas.99@gmail.com',
+      message: message
+    };
+
+    try {
+      setIsSubmitting(true);
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+      toast({
+        title: t('contact.success'),
+        description: t('contact.successDescription'),
+      });
+
+      setFormData({ name: '', email: '', message: '' });
+    } catch (err) {
+      toast({
+        title: 'Error',
+        description: t('contact.error') || 'No se pudo enviar el mensaje. Intenta de nuevo.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [

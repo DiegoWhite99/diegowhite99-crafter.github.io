@@ -102,6 +102,31 @@ contact: {
 }
 ```
 
+### EmailJS (Contact form)
+
+This project uses EmailJS to send contact form messages to your email. Steps:
+
+1. Create a free account at https://www.emailjs.com
+2. Add an Email Service (e.g., Gmail) and note the *Service ID*.
+3. Create an Email Template and note the *Template ID*. Use template variables: `from_name`, `from_email`, `message`, `to_email`.
+4. In EmailJS dashboard get your *Public Key* (also called *User ID*).
+5. Create a `.env` in the project root (do NOT commit it) and set:
+
+```
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+6. Install deps and run:
+
+```bash
+npm install
+npm run dev
+```
+
+By default messages will be sent to `diegofer.cas.99@gmail.com`. To change the recipient, edit `src/components/Contact.tsx`.
+
 ### About Section
 
 ```typescript

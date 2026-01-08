@@ -79,7 +79,7 @@ const content = {
       title: "Software Development Tech",
       subtitle: "Building ideas with code",
       greeting: "Hello, I'm",
-      profilePhoto: "/profile-photo.jpg",
+      profilePhoto: "/profile-photo.png",
       cvUrl: "https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
     },
     about: {
@@ -181,7 +181,7 @@ const content = {
       title: "Tecnólogo en Desarrollo de Software",
       subtitle: "Construyendo ideas con codigo",
       greeting: "Hola, soy",
-      profilePhoto: "/profile-photo.jpg",
+      profilePhoto: "/profile-photo.png",
       cvUrl: "https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
     },
     about: {
@@ -212,28 +212,27 @@ const content = {
     },
     projects: [
       {
-        title: "Plataforma de E-Commerce",
-        description: "Una plataforma de e-commerce completa construida con React, TypeScript e integración de Stripe. Incluye catálogo de productos, carrito de compras, procesamiento de pagos y panel de administración.",
+        title: "Sitio Web Portafolio",
+        description: "Portafolio profesional para vendedora de cursos certificados de trabajo en alturas, orientado a la presentación clara de la oferta formativa y al fortalecimiento del proceso comercial.",
         image: "/project-website.png",
-        technologies: ["React", "TypeScript", "Node.js", "Stripe", "MongoDB"],
-        github: "https://github.com/joanesmith/ecommerce",
-        demo: "https://ecommerce-demo.vercel.app"
+        technologies: ["Html", "Css", "JavaScript","Tailwind CSS"],
+        github: "https://github.com/smed-technology/ajuliettealturas.com",
+        demo: "https://ajuliettealturas.com"
       },
       {
-        title: "Dashboard de Gestión de Proyectos",
-        description: "Una herramienta completa de gestión de proyectos con seguimiento de tareas, colaboración en equipo y actualizaciones en tiempo real. Construida con patrones modernos de React y gestión de estado.",
+        title: "SMED Technology Website",
+        description: "Diseño y desarrollo del sitio web de SMED Technology, actualmente en construcción, con funcionalidades de contacto, comercio electrónico e integración de procesos a través de GLPI",
         image: "/project-smed.jpg",
-        technologies: ["React", "Redux", "Chart.js", "Socket.io", "Express"],
-        github: "https://github.com/joanesmith/pm-dashboard",
-        demo: "https://pm-dashboard.vercel.app"
+        technologies: ["Html", "Css", "JavaScript","Tailwind CSS","node.js","mysql","GLPI","bootstrap"],
+        github: "https://github.com/DiegoWhite99/SMED-TECHNOLOGY",
       },
       {
-        title: "Aplicación de Banca Móvil",
-        description: "Una aplicación de banca móvil segura con autenticación biométrica, historial de transacciones e insights financieros. Optimizada para rendimiento y seguridad.",
+        title: "Proyecto de sistema de recomendación agrícola para asociaciones",
+        description: "Este proyecto se enfoca en el desarrollo de un sistema de recomendación para ayudar a pequeños agricultores en zonas rurales de Boyacá a conectarse con asociaciones agrícolas, permitiendo el acceso a oportunidades de mercado justas, capacitación y crecimiento económico sostenible.",
         image: "project-agricultural.png",
-        technologies: ["React Native", "TypeScript", "Firebase", "Biometrics", "Chart.js"],
-        github: "https://github.com/joanesmith/mobile-banking",
-        demo: "https://banking-app-demo.vercel.app"
+        technologies: ["Python", "ETL", "Data Analysis", "pandas","NumPy","Matplotlib","skelearn","matplotlib"],
+        github: "https://colab.research.google.com/drive/1YmMVqwUCMd5Io9NIrRBbIvrLUIn_uLcv?usp=sharing",
+        demo: "https://colab.research.google.com/drive/1YmMVqwUCMd5Io9NIrRBbIvrLUIn_uLcv?usp=sharing"
       }
     ],
     skills: {

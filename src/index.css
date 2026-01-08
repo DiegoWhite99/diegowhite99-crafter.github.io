@@ -44,7 +44,7 @@ All colors MUST be HSL.
     --ring: 120 100% 35%;
 
     /* Green tech gradients */
-    --gradient-primary: linear-gradient(135deg, hsla(214, 84%, 25%, 0.774), hsl(234, 100%, 40%));
+    --gradient-primary: linear-gradient(135deg, hsla(135, 84%, 25%, 0.774), hsl(115, 100%, 40%));
     --gradient-accent: linear-gradient(135deg, hsl(75 100% 50%), hsl(85 100% 55%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%), hsl(120 10% 96%));
     --gradient-tech: linear-gradient(135deg, hsl(120 100% 35%), hsl(75 100% 50%));
@@ -104,11 +104,11 @@ All colors MUST be HSL.
     --accent-foreground: 0 0% 3%;
 
     /* Matrix-style dark gradients */
-    --gradient-primary: linear-gradient(135deg, rgb(26, 228, 36), hsl(118, 57%, 66%));
-    --gradient-accent: linear-gradient(135deg, hsl(75 100% 60%), hsl(85 100% 65%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 3%), hsl(120 30% 5%));
+    --gradient-primary: linear-gradient(135deg, #0c4e74, hsl(85 100% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(207, 68%, 46%), hsl(85 100% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 3%), hsla(190, 43%, 19%, 0.63));
     --gradient-tech: linear-gradient(135deg, hsl(120 100% 50%), hsl(75 100% 60%));
-    --gradient-matrix: linear-gradient(135deg, hsl(0 0% 3%), hsl(120 100% 50%));
+    --gradient-matrix: linear-gradient(135deg, hsl(0 0% 3%), hsl(12, 9%, 90%));
 
     /* Glowing green shadows */
     --shadow-soft: 0 2px 20px -5px hsl(120 100% 50% / 0.3);
