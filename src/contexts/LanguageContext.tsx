@@ -62,9 +62,9 @@ const translations = {
     
     // About highlights
     'about.highlights.experience': 'Professional Experience',
-    'about.highlights.projects': 'Successfully Delivered',
-    'about.highlights.tech': 'Latest Technologies',
-    'about.highlights.quality': 'Best Practices',
+    'about.highlights.projects': 'Successfully developed projects',
+    'about.highlights.tech': 'Latest technologies',
+    'about.highlights.learning': 'continuous learning',
   },
   es: {
     // Navigation
@@ -118,10 +118,10 @@ const translations = {
     'footer.builtWith': 'Construido con ❤️ usando React & TypeScript',
     
     // About highlights
-    'about.highlights.experience': 'Experiencia Profesional',
-    'about.highlights.projects': 'Proyectos Entregados',
+    'about.highlights.experience': 'Experiencia ',
+    'about.highlights.projects': 'Proyectos Desarrollados con Exito',
     'about.highlights.tech': 'Tecnologías Modernas',
-    'about.highlights.quality': 'Mejores Prácticas',
+    'about.highlights.learning': 'Aprendizaje Continuo',
   }
 };
 

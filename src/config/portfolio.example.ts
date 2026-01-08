@@ -79,7 +79,7 @@ export const portfolioConfig: PortfolioConfig = {
     subtitle: "Your subtitle or tagline",
     greeting: "Hello, I'm",
           profilePhoto: "/profile-photo.png",
-    cvUrl: "/path-to-your-cv.pdf" // Optional
+    cvUrl: "/https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing" // Optional
   },
 
   contact: {

@@ -1,3 +1,5 @@
+import { Icon } from "lucide-react";
+
 export interface PortfolioConfig {
   // Personal Information
   personal: {
@@ -74,11 +76,11 @@ const content = {
   en: {
     personal: {
       name: "Diego Castelblanco",
-      title: "Software Engineer",
-      subtitle: "Building elegant solutions with modern technologies",
+      title: "Software Development Tech",
+      subtitle: "Building ideas with code",
       greeting: "Hello, I'm",
-      profilePhoto: "/profile-photo.png",
-      cvUrl: "/path-to-cv.pdf"
+      profilePhoto: "/profile-photo.jpg",
+      cvUrl: "https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
     },
     about: {
       description: "Software Development Technologist and Systems Engineering student with experience in frontend web development, backend scripting with Python, and data processing using ETL workflows. I have built and deployed web projects using modern development practices, Linux-based environments, and Git version control, focusing on clarity, scalability, and maintainability.",
@@ -92,82 +94,79 @@ const content = {
         {
           icon: "Users",
           title: "5 Projects",
-          description: "Successfully Delivered"
+          description: "projects"
         },
         {
           icon: "Lightbulb",
           title: "Modern Tech",
-          description: "Latest Technologies"
+          description: "tech"
         },
         {
           icon: "Award",
           title: "Quality Focus",
-          description: "Best Practices"
+          description: "learning"
         }
       ]
     },
     projects: [
       {
-        title: "E-Commerce Platform",
-        description: "A full-featured e-commerce platform built with React, TypeScript, and Stripe integration. Features include product catalog, shopping cart, payment processing, and admin dashboard.",
-        image: "/project-ecommerce.jpg",
-        technologies: ["React", "TypeScript", "Node.js", "Stripe", "MongoDB"],
-        github: "https://github.com/joanesmith/ecommerce",
-        demo: "https://ecommerce-demo.vercel.app"
+        title: "Web Site Portfolio",
+        description: "Commercial portfolio of certified work-at-height courses.",
+        image: "/project-website.png",
+        technologies: ["Html", "Css", "JavaScript","Tailwind CSS"],
+        github: "https://github.com/smed-technology/ajuliettealturas.com",
+        demo: "https://ajuliettealturas.com"
       },
       {
-        title: "Project Management Dashboard",
-        description: "A comprehensive project management tool with task tracking, team collaboration, and real-time updates. Built with modern React patterns and state management.",
-        image: "/project-dashboard.jpg",
-        technologies: ["React", "Redux", "Chart.js", "Socket.io", "Express"],
-        github: "https://github.com/joanesmith/pm-dashboard",
-        demo: "https://pm-dashboard.vercel.app"
+        title: "SMED Technology Website",
+        description: "Design and development of the SMED Technology website, currently under construction, featuring contact, e-commerce, and process integration through GLPI",
+        image: "/project-smed.jpg",
+        technologies: ["Html", "Css", "JavaScript","Tailwind CSS","node.js","mysql","GLPI","bootstrap"],
+        github: "https://github.com/DiegoWhite99/SMED-TECHNOLOGY",
       },
       {
-        title: "Mobile Banking App",
-        description: "A secure mobile banking application with biometric authentication, transaction history, and financial insights. Optimized for performance and security.",
-        image: "/project-mobile.jpg",
-        technologies: ["React Native", "TypeScript", "Firebase", "Biometrics", "Chart.js"],
-        github: "https://github.com/joanesmith/mobile-banking",
-        demo: "https://banking-app-demo.vercel.app"
+        title: "Agricultural recommendation system project for associations",
+        description: "This project focuses on developing a recommendation system to help small farmers in rural areas of Boyacá connect with agricultural associations, enabling access to fair market opportunities, training, and sustainable economic growth.",
+        image: "project-agricultural.png",
+        technologies: ["Python", "ETL", "Data Analysis", "pandas","NumPy","Matplotlib","skelearn","matplotlib"],
+        github: "https://colab.research.google.com/drive/1YmMVqwUCMd5Io9NIrRBbIvrLUIn_uLcv?usp=sharing",
+        demo: "https://colab.research.google.com/drive/1YmMVqwUCMd5Io9NIrRBbIvrLUIn_uLcv?usp=sharing"
       }
     ],
-    skills: {
+      skills: {
       categories: [
         {
           title: "Frontend",
           skills: [
-            { name: "React", level: 95 },
-            { name: "TypeScript", level: 90 },
-            { name: "Next.js", level: 85 },
-            { name: "Tailwind CSS", level: 88 },
-            { name: "Vue.js", level: 75 }
+            { name: "JavaScript", level: 50 },
+            { name: "TypeScript", level: 50 },
+            { name: "Tailwind CSS", level: 30 },
+            { name: "Html", level: 80 },
+            { name: "Css", level: 70 }
           ]
         },
         {
           title: "Backend",
           skills: [
-            { name: "Node.js", level: 88 },
-            { name: "Python", level: 82 },
-            { name: "PostgreSQL", level: 85 },
-            { name: "MongoDB", level: 80 },
-            { name: "GraphQL", level: 78 }
+            { name: "Node.js", level: 40 },
+            { name: "Python", level: 55},
+            { name: "SQL", level: 45},
+            { name: "Linux", level: 70 },
+            { name: "Git", level: 65 }
           ]
         },
         {
-          title: "Tools & Others",
+          title: "Herramientas y Otros",
           skills: [
-            { name: "AWS", level: 85 },
-            { name: "Docker", level: 82 },
-            { name: "Git", level: 92 },
-            { name: "Jest", level: 88 },
-            { name: "Figma", level: 75 }
+            { name: "AWS", level: 30},
+            { name: "Docker", level: 25 }
+            
           ]
         }
       ],
       technologies: [
-        "React", "TypeScript", "Node.js", "AWS", "Docker", "PostgreSQL", 
-        "MongoDB", "GraphQL", "Jest", "Tailwind CSS", "Next.js", "Vue.js"
+        "TypeScript", "Node.js", "AWS","Worbench",
+        "Tailwind CSS","Python","JavaScript","Html","Css"
       ]
     },
     meta: {
@@ -179,11 +178,11 @@ const content = {
   es: {
     personal: {
       name: "Diego Castelblanco",
-      title: "Ingeniero de Sistemas",
-      subtitle: "Construyendo soluciones elegantes con tecnologías modernas",
+      title: "Tecnólogo en Desarrollo de Software",
+      subtitle: "Construyendo ideas con codigo",
       greeting: "Hola, soy",
-      profilePhoto: "/profile-photo.png",
-      cvUrl: "/path-to-cv.pdf"
+      profilePhoto: "/profile-photo.jpg",
+      cvUrl: "https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
     },
     about: {
       description: "Soy estudiante de Ingeniería de Sistemas y Tecnólogo en Desarrollo de Software, con experiencia en el desarrollo de aplicaciones web y soluciones digitales. Me enfoco en la creación de interfaces funcionales utilizando HTML, CSS y JavaScript, y cuento con bases en lógica backend con Python y SQL",
@@ -192,22 +191,22 @@ const content = {
         {
           icon: "Code2",
           title: "2 Años",
-          description: "Experiencia"
+          description:"Experience"
         },
         {
           icon: "Users",
           title: "5 Proyectos",
-          description: "Entregados Exitosamente"
+          description: "projects"
         },
         {
           icon: "Lightbulb",
           title: "Tecnología Moderna",
-          description: "Últimas Tecnologías"
+          description: "tech"
         },
         {
           icon: "Award",
           title: "Enfoque en Calidad",
-          description: "Mejores Prácticas"
+          description: "learning"
         }
       ]
     },
@@ -215,7 +214,7 @@ const content = {
       {
         title: "Plataforma de E-Commerce",
         description: "Una plataforma de e-commerce completa construida con React, TypeScript e integración de Stripe. Incluye catálogo de productos, carrito de compras, procesamiento de pagos y panel de administración.",
-        image: "/project-ecommerce.jpg",
+        image: "/project-website.png",
         technologies: ["React", "TypeScript", "Node.js", "Stripe", "MongoDB"],
         github: "https://github.com/joanesmith/ecommerce",
         demo: "https://ecommerce-demo.vercel.app"
@@ -223,7 +222,7 @@ const content = {
       {
         title: "Dashboard de Gestión de Proyectos",
         description: "Una herramienta completa de gestión de proyectos con seguimiento de tareas, colaboración en equipo y actualizaciones en tiempo real. Construida con patrones modernos de React y gestión de estado.",
-        image: "/project-dashboard.jpg",
+        image: "/project-smed.jpg",
         technologies: ["React", "Redux", "Chart.js", "Socket.io", "Express"],
         github: "https://github.com/joanesmith/pm-dashboard",
         demo: "https://pm-dashboard.vercel.app"
@@ -231,7 +230,7 @@ const content = {
       {
         title: "Aplicación de Banca Móvil",
         description: "Una aplicación de banca móvil segura con autenticación biométrica, historial de transacciones e insights financieros. Optimizada para rendimiento y seguridad.",
-        image: "/project-mobile.jpg",
+        image: "project-agricultural.png",
         technologies: ["React Native", "TypeScript", "Firebase", "Biometrics", "Chart.js"],
         github: "https://github.com/joanesmith/mobile-banking",
         demo: "https://banking-app-demo.vercel.app"
@@ -242,37 +241,35 @@ const content = {
         {
           title: "Frontend",
           skills: [
-            { name: "React", level: 95 },
-            { name: "TypeScript", level: 90 },
-            { name: "Next.js", level: 85 },
-            { name: "Tailwind CSS", level: 88 },
-            { name: "Vue.js", level: 75 }
+            { name: "JavaScript", level: 50 },
+            { name: "TypeScript", level: 50 },
+            { name: "Tailwind CSS", level: 30 },
+            { name: "Html", level: 80 },
+            { name: "Css", level: 70 }
           ]
         },
         {
           title: "Backend",
           skills: [
-            { name: "Node.js", level: 88 },
-            { name: "Python", level: 82 },
-            { name: "PostgreSQL", level: 85 },
-            { name: "MongoDB", level: 80 },
-            { name: "GraphQL", level: 78 }
+            { name: "Node.js", level: 40 },
+            { name: "Python", level: 55},
+            { name: "SQL", level: 45},
+            { name: "Linux", level: 70 },
+            { name: "Git", level: 65 }
           ]
         },
         {
           title: "Herramientas y Otros",
           skills: [
-            { name: "AWS", level: 85 },
-            { name: "Docker", level: 82 },
-            { name: "Git", level: 92 },
-            { name: "Jest", level: 88 },
-            { name: "Figma", level: 75 }
+            { name: "AWS", level: 30},
+            { name: "Docker", level: 25 }
+            
           ]
         }
       ],
       technologies: [
-        "React", "TypeScript", "Node.js", "AWS", "Docker", "PostgreSQL", 
-        "MongoDB", "GraphQL", "Jest", "Tailwind CSS", "Next.js", "Vue.js"
+        "TypeScript", "Node.js", "AWS","Worbench",
+        "Tailwind CSS","Python","JavaScript","Html","Css"
       ]
     },
     meta: {
@@ -289,19 +286,19 @@ export const portfolioConfig: PortfolioConfig = {
     title: "Software Engineer",
     subtitle: "Building elegant solutions with modern technologies",
     greeting: "Hello, I'm",
-    profilePhoto: "/profile-photo.png",
+    profilePhoto: "/profile-photo.gif",
     cvUrl: "/path-to-cv.pdf"
   },
 
   contact: {
-    email: "joane.smith@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "San Francisco, CA",
+    email: "diegofer.cas.99@gmail.com",
+    phone: "+57 (319) 6946997",
+    location: "Bogotá, Colombia",
     social: {
-      github: "https://github.com/joanesmith",
-      linkedin: "https://linkedin.com/in/joanesmith",
-      twitter: "https://twitter.com/joanesmith",
-      instagram: "https://instagram.com/joanesmith"
+      github: "https://github.com/DiegoWhite99",
+      linkedin: "https://linkedin.com/in/diegowhite99",
+      twitter: "https://x.com/99Diegofer",
+      instagram: "https://instagram.com/diego.castelblanco"
     }
   },
 
@@ -334,9 +331,9 @@ export const portfolioConfig: PortfolioConfig = {
 
   projects: [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform built with React, TypeScript, and Stripe integration. Features include product catalog, shopping cart, payment processing, and admin dashboard.",
-      image: "/project-ecommerce.jpg",
+      title: "Web Site Portafolio",
+      description: "Commercial portfolio of certified work-at-height courses",
+      image: "/project-website.png",
       technologies: ["React", "TypeScript", "Node.js", "Stripe", "MongoDB"],
       github: "https://github.com/joanesmith/ecommerce",
       demo: "https://ecommerce-demo.vercel.app"
@@ -344,7 +341,7 @@ export const portfolioConfig: PortfolioConfig = {
     {
       title: "Project Management Dashboard",
       description: "A comprehensive project management tool with task tracking, team collaboration, and real-time updates. Built with modern React patterns and state management.",
-      image: "/project-dashboard.jpg",
+      image: "/project-smed.jpg",
       technologies: ["React", "Redux", "Chart.js", "Socket.io", "Express"],
       github: "https://github.com/joanesmith/pm-dashboard",
       demo: "https://pm-dashboard.vercel.app"
@@ -352,7 +349,7 @@ export const portfolioConfig: PortfolioConfig = {
     {
       title: "Mobile Banking App",
       description: "A secure mobile banking application with biometric authentication, transaction history, and financial insights. Optimized for performance and security.",
-      image: "/project-mobile.jpg",
+      image: "project-agricultural.png",
       technologies: ["React Native", "TypeScript", "Firebase", "Biometrics", "Chart.js"],
       github: "https://github.com/joanesmith/mobile-banking",
       demo: "https://banking-app-demo.vercel.app"
@@ -360,47 +357,45 @@ export const portfolioConfig: PortfolioConfig = {
   ],
 
   skills: {
-    categories: [
-      {
-        title: "Frontend",
-        skills: [
-          { name: "React", level: 95 },
-          { name: "TypeScript", level: 90 },
-          { name: "Next.js", level: 85 },
-          { name: "Tailwind CSS", level: 88 },
-          { name: "Vue.js", level: 75 }
-        ]
-      },
-      {
-        title: "Backend",
-        skills: [
-          { name: "Node.js", level: 88 },
-          { name: "Python", level: 82 },
-          { name: "PostgreSQL", level: 85 },
-          { name: "MongoDB", level: 80 },
-          { name: "GraphQL", level: 78 }
-        ]
-      },
-      {
-        title: "Tools & Others",
-        skills: [
-          { name: "AWS", level: 85 },
-          { name: "Docker", level: 82 },
-          { name: "Git", level: 92 },
-          { name: "Jest", level: 88 },
-          { name: "Figma", level: 75 }
-        ]
-      }
-    ],
-    technologies: [
-      "React", "TypeScript", "Node.js", "AWS", "Docker", "PostgreSQL", 
-      "MongoDB", "GraphQL", "Jest", "Tailwind CSS", "Next.js", "Vue.js"
-    ]
-  },
+      categories: [
+        {
+          title: "Frontend",
+          skills: [
+            { name: "JavaScript", level: 50 },
+            { name: "TypeScript", level: 50 },
+            { name: "Tailwind CSS", level: 30 },
+            { name: "Html", level: 80 },
+            { name: "Css", level: 70 }
+          ]
+        },
+        {
+          title: "Backend",
+          skills: [
+            { name: "Node.js", level: 40 },
+            { name: "Python", level: 55},
+            { name: "SQL", level: 45},
+            { name: "Linux", level: 70 },
+            { name: "Git", level: 65 }
+          ]
+        },
+        {
+          title: "Herramientas y Otros",
+          skills: [
+            { name: "AWS", level: 30},
+            { name: "Docker", level: 25 }
+            
+          ]
+        }
+      ],
+      technologies: [
+        "TypeScript", "Node.js", "AWS","Worbench",
+        "Tailwind CSS","Python","JavaScript","Html","Css"
+      ]
+    },
 
   footer: {
     copyright: "All rights reserved.",
-    builtWith: "Built with ❤️ using React & TypeScript"
+    builtWith: "Built with using React & TypeScript"
   },
 
   meta: {

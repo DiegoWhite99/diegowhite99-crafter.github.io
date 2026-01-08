@@ -104,7 +104,7 @@ All colors MUST be HSL.
     --accent-foreground: 0 0% 3%;
 
     /* Matrix-style dark gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(224, 75%, 41%), hsl(0, 0%, 100%));
+    --gradient-primary: linear-gradient(135deg, rgb(26, 228, 36), hsl(118, 57%, 66%));
     --gradient-accent: linear-gradient(135deg, hsl(75 100% 60%), hsl(85 100% 65%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 3%), hsl(120 30% 5%));
     --gradient-tech: linear-gradient(135deg, hsl(120 100% 50%), hsl(75 100% 60%));

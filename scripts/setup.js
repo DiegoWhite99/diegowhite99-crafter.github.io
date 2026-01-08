@@ -56,7 +56,7 @@ const content = {
       subtitle: "${subtitle}",
       greeting: "Hello, I'm",
       profilePhoto: "/profile-photo.png",
-      cvUrl: "/path-to-your-cv.pdf"
+      cvUrl: "/https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
     },
     about: {
       description: "${description}",
@@ -146,7 +146,7 @@ const content = {
       subtitle: "${subtitleEs}",
       greeting: "Hola, soy",
       profilePhoto: "/profile-photo.png",
-      cvUrl: "/path-to-your-cv.pdf"
+      cvUrl: "/https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
     },
     about: {
       description: "${descriptionEs}",
@@ -155,17 +155,17 @@ const content = {
         {
           icon: "Code2",
           title: "5+ Años",
-          description: "Experiencia Profesional"
+          description: "Experiencia al"
         },
         {
           icon: "Users",
-          title: "20+ Proyectos",
-          description: "Entregados Exitosamente"
+          title: "5+ Proyectos",
+          description: "Desarrollados con Exito"
         },
         {
           icon: "Lightbulb",
           title: "Tecnología Moderna",
-          description: "Últimas Tecnologías"
+          description: "Aprendizaje Continuo"
         },
         {
           icon: "Award",
@@ -238,7 +238,7 @@ export const portfolioConfig: PortfolioConfig = {
     subtitle: "${subtitle}",
     greeting: "Hello, I'm",
     profilePhoto: "/profile-photo.png",
-    cvUrl: "/path-to-your-cv.pdf" // Optional - update this path
+    cvUrl: "/https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing" // Optional - update this path
   },
 
   contact: {
