@@ -56,7 +56,7 @@ const content = {
       subtitle: "${subtitle}",
       greeting: "Hello, I'm",
       profilePhoto: "/profile-photo.png",
-      cvUrl: "/https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
+      cvUrl: "/https://drive.google.com/file/d/15Wr9oDVzbKi9GsC75nAL1ttA2uIgSEt9/view?usp=sharing"
     },
     about: {
       description: "${description}",
@@ -146,7 +146,7 @@ const content = {
       subtitle: "${subtitleEs}",
       greeting: "Hola, soy",
       profilePhoto: "/profile-photo.png",
-      cvUrl: "/https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
+      cvUrl: "/https://drive.google.com/file/d/15Wr9oDVzbKi9GsC75nAL1ttA2uIgSEt9/view?usp=sharing"
     },
     about: {
       description: "${descriptionEs}",
@@ -238,7 +238,7 @@ export const portfolioConfig: PortfolioConfig = {
     subtitle: "${subtitle}",
     greeting: "Hello, I'm",
     profilePhoto: "/profile-photo.png",
-    cvUrl: "/https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing" // Optional - update this path
+    cvUrl: "/https://drive.google.com/file/d/15Wr9oDVzbKi9GsC75nAL1ttA2uIgSEt9/view?usp=sharing" // Optional - update this path
   },
 
   contact: {

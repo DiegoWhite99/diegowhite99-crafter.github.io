@@ -80,7 +80,7 @@ const content = {
       subtitle: "Building ideas with code",
       greeting: "Hello, I'm",
       profilePhoto: "/profile-photo.png",
-      cvUrl: "https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
+      cvUrl: "https://drive.google.com/file/d/15Wr9oDVzbKi9GsC75nAL1ttA2uIgSEt9/view?usp=sharing"
     },
     about: {
       description: "Software Development Technologist and Systems Engineering student with experience in frontend web development, backend scripting with Python, and data processing using ETL workflows. I have built and deployed web projects using modern development practices, Linux-based environments, and Git version control, focusing on clarity, scalability, and maintainability.",
@@ -182,7 +182,7 @@ const content = {
       subtitle: "Construyendo ideas con codigo",
       greeting: "Hola, soy",
       profilePhoto: "/profile-photo.png",
-      cvUrl: "https://drive.google.com/file/d/1hCoFynTKI_LNmBKT32-1mRxnbZiNPkw4/view?usp=sharing"
+      cvUrl: "https://drive.google.com/file/d/15Wr9oDVzbKi9GsC75nAL1ttA2uIgSEt9/view?usp=sharing"
     },
     about: {
       description: "Soy estudiante de Ingeniería de Sistemas y Tecnólogo en Desarrollo de Software, con experiencia en el desarrollo de aplicaciones web y soluciones digitales. Me enfoco en la creación de interfaces funcionales utilizando HTML, CSS y JavaScript, y cuento con bases en lógica backend con Python y SQL",
