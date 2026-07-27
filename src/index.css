@@ -143,7 +143,7 @@ All colors MUST be HSL.
     overflow-x: hidden;
   }
 
-  /* Grid Background - EXTREME VISIBILITY */
+  /* Grid Background - GRAYISH VISIBLE */
   body::before {
     content: '';
     position: fixed;
@@ -154,20 +154,21 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 100% 60% / 0.7) 0px,
-        hsl(210 100% 60% / 0.7) 2px,
-        transparent 2px,
-        transparent 50px
+        hsl(210 40% 65% / 0.25) 0px,
+        hsl(210 40% 65% / 0.25) 1px,
+        transparent 1px,
+        transparent 40px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 100% 60% / 0.7) 0px,
-        hsl(210 100% 60% / 0.7) 2px,
-        transparent 2px,
-        transparent 50px
+        hsl(210 40% 65% / 0.25) 0px,
+        hsl(210 40% 65% / 0.25) 1px,
+        transparent 1px,
+        transparent 40px
       );
     pointer-events: none;
     z-index: 10;
+    background-attachment: fixed;
   }
 
   /* Animated grid effect */
@@ -211,17 +212,17 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 100% 50% / 0.6) 0px,
-        hsl(210 100% 50% / 0.6) 2px,
-        transparent 2px,
-        transparent 50px
+        hsl(210 60% 55% / 0.2) 0px,
+        hsl(210 60% 55% / 0.2) 1px,
+        transparent 1px,
+        transparent 40px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 100% 50% / 0.6) 0px,
-        hsl(210 100% 50% / 0.6) 2px,
-        transparent 2px,
-        transparent 50px
+        hsl(210 60% 55% / 0.2) 0px,
+        hsl(210 60% 55% / 0.2) 1px,
+        transparent 1px,
+        transparent 40px
       );
   }
 
