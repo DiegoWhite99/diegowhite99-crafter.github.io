@@ -132,22 +132,23 @@ All colors MUST be HSL.
   }
 
   .dark body {
+    background-color: hsl(var(--background));
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 100% 50% / 0.2) 0px,
-        hsl(210 100% 50% / 0.2) 1px,
-        transparent 1px,
+        hsl(210 100% 50% / 0.25) 0px,
+        hsl(210 100% 50% / 0.25) 2px,
+        transparent 2px,
         transparent 40px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 100% 50% / 0.2) 0px,
-        hsl(210 100% 50% / 0.2) 1px,
-        transparent 1px,
+        hsl(210 100% 50% / 0.25) 0px,
+        hsl(210 100% 50% / 0.25) 2px,
+        transparent 2px,
         transparent 40px
-      ) !important;
-    background-attachment: fixed !important;
+      );
+    background-attachment: fixed;
   }
 }
 
@@ -157,25 +158,26 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    color: hsl(var(--foreground));
     position: relative;
     overflow-x: hidden;
+    background-color: hsl(var(--background));
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 100% 50% / 0.2) 0px,
-        hsl(210 100% 50% / 0.2) 1px,
-        transparent 1px,
+        hsl(210 100% 50% / 0.25) 0px,
+        hsl(210 100% 50% / 0.25) 2px,
+        transparent 2px,
         transparent 40px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 100% 50% / 0.2) 0px,
-        hsl(210 100% 50% / 0.2) 1px,
-        transparent 1px,
+        hsl(210 100% 50% / 0.25) 0px,
+        hsl(210 100% 50% / 0.25) 2px,
+        transparent 2px,
         transparent 40px
-      ) !important;
-    background-attachment: fixed !important;
+      );
+    background-attachment: fixed;
   }
 
   /* Animated grid effect */
