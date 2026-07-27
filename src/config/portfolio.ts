@@ -376,17 +376,17 @@ export const portfolioConfig: PortfolioConfig = {
     {
       title: "Robotics & Applied AI — Unitree Go2",
       description: "SLAM and autonomous navigation project with the Unitree Go2 robot. Configured ORB-SLAM3 on ROS 2 Humble for real-time mapping and localization, and integrated conversational AI into the robotic platform via WebRTC.",
-      image: "/project-robotics.png",
+      image: "/unitree.webp",
       technologies: ["ROS 2", "ORB-SLAM3", "WebRTC", "Python", "Linux"],
-      github: "https://github.com/DiegoWhite99/robotics-unitree",
+      github: "https://github.com/DiegoWhite99/Unitreego2",
       demo: "#"
     },
     {
       title: "Internal Services Server — SMED Technology",
       description: "Deployed and maintain a self-hosted Linux server (CasaOS) running Docker, n8n, Ollama, and MariaDB, with secure remote access via Tailscale — powering internal automation and a custom Telegram AI agent.",
-      image: "/project-server.png",
+      image: "/smedblog.png",
       technologies: ["Linux", "Docker", "n8n", "Ollama", "Tailscale"],
-      github: "https://github.com/DiegoWhite99/smed-server",
+      github: "https://github.com/DiegoWhite99/CRM-SMED",
       demo: "#"
     }
   ],
