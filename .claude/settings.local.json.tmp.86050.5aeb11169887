@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Aumentar visibilidad de la cuadrícula animada *)",
+      "Bash(git commit -m 'Actualizar links de GitHub y rutas de imágenes en config *)",
+      "Bash(git commit -m 'ÚLTIMO INTENTO: opacidad 0.7, z-index 10, #root z-index 20 *)"
+    ]
+  }
+}
