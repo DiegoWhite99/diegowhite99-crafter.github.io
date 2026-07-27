@@ -130,6 +130,24 @@ All colors MUST be HSL.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .dark body {
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        hsl(210 60% 50% / 0.15) 0px,
+        hsl(210 60% 50% / 0.15) 1px,
+        transparent 1px,
+        transparent 50px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        hsl(210 60% 50% / 0.15) 0px,
+        hsl(210 60% 50% / 0.15) 1px,
+        transparent 1px,
+        transparent 50px
+      );
+  }
 }
 
 @layer base {
@@ -141,33 +159,21 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     position: relative;
     overflow-x: hidden;
-  }
-
-  /* Grid Background - GRAYISH VISIBLE */
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 40% 65% / 0.25) 0px,
-        hsl(210 40% 65% / 0.25) 1px,
+        hsl(210 40% 70% / 0.2) 0px,
+        hsl(210 40% 70% / 0.2) 1px,
         transparent 1px,
-        transparent 40px
+        transparent 50px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 40% 65% / 0.25) 0px,
-        hsl(210 40% 65% / 0.25) 1px,
+        hsl(210 40% 70% / 0.2) 0px,
+        hsl(210 40% 70% / 0.2) 1px,
         transparent 1px,
-        transparent 40px
+        transparent 50px
       );
-    pointer-events: none;
-    z-index: 10;
     background-attachment: fixed;
   }
 
