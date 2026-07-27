@@ -143,7 +143,7 @@ All colors MUST be HSL.
     overflow-x: hidden;
   }
 
-  /* Clean Grid Background with Animation */
+  /* Clean Grid Background with Animation - VISIBLE */
   body::before {
     content: '';
     position: fixed;
@@ -152,8 +152,8 @@ All colors MUST be HSL.
     width: 200%;
     height: 200%;
     background-image:
-      linear-gradient(hsl(210 20% 90% / 0.5) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(210 20% 90% / 0.5) 1px, transparent 1px);
+      linear-gradient(hsl(210 100% 50% / 0.25) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(210 100% 50% / 0.25) 1px, transparent 1px);
     background-size: 40px 40px;
     pointer-events: none;
     z-index: 1;
