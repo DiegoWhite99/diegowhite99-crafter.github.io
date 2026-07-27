@@ -143,7 +143,7 @@ All colors MUST be HSL.
     overflow-x: hidden;
   }
 
-  /* Grid Background - VISIBLE */
+  /* Grid Background - SUPER OBVIOUS */
   body::before {
     content: '';
     position: fixed;
@@ -154,15 +154,15 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 100% 60% / 0.5) 0px,
-        hsl(210 100% 60% / 0.5) 2px,
+        hsl(210 100% 50% / 0.3) 0px,
+        hsl(210 100% 50% / 0.3) 2px,
         transparent 2px,
         transparent 50px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 100% 60% / 0.5) 0px,
-        hsl(210 100% 60% / 0.5) 2px,
+        hsl(210 100% 50% / 0.3) 0px,
+        hsl(210 100% 50% / 0.3) 2px,
         transparent 2px,
         transparent 50px
       );
@@ -181,8 +181,8 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         45deg,
-        hsl(210 100% 50% / 0.2) 0px,
-        hsl(210 100% 50% / 0.2) 2px,
+        hsl(210 60% 60% / 0.15) 0px,
+        hsl(210 60% 60% / 0.15) 2px,
         transparent 2px,
         transparent 100px
       );
@@ -211,15 +211,15 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 100% 50% / 0.45) 0px,
-        hsl(210 100% 50% / 0.45) 2px,
+        hsl(210 100% 55% / 0.28) 0px,
+        hsl(210 100% 55% / 0.28) 2px,
         transparent 2px,
         transparent 50px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 100% 50% / 0.45) 0px,
-        hsl(210 100% 50% / 0.45) 2px,
+        hsl(210 100% 55% / 0.28) 0px,
+        hsl(210 100% 55% / 0.28) 2px,
         transparent 2px,
         transparent 50px
       );
@@ -229,8 +229,8 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         45deg,
-        hsl(210 100% 55% / 0.2) 0px,
-        hsl(210 100% 55% / 0.2) 2px,
+        hsl(210 100% 50% / 0.15) 0px,
+        hsl(210 100% 50% / 0.15) 2px,
         transparent 2px,
         transparent 100px
       );
