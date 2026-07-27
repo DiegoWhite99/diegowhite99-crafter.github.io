@@ -143,7 +143,7 @@ All colors MUST be HSL.
     overflow-x: hidden;
   }
 
-  /* Clean Grid Background with Animation - VISIBLE */
+  /* Clean Grid Background with Animation - HIGHLY VISIBLE */
   body::before {
     content: '';
     position: fixed;
@@ -152,8 +152,8 @@ All colors MUST be HSL.
     width: 200%;
     height: 200%;
     background-image:
-      linear-gradient(hsl(210 100% 50% / 0.25) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(210 100% 50% / 0.25) 1px, transparent 1px);
+      linear-gradient(hsl(210 100% 50% / 0.6) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(210 100% 50% / 0.6) 1px, transparent 1px);
     background-size: 40px 40px;
     pointer-events: none;
     z-index: 1;
@@ -178,8 +178,8 @@ All colors MUST be HSL.
   /* Dark mode grid background */
   .dark body::before {
     background-image:
-      linear-gradient(hsl(210 40% 25% / 0.3) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(210 40% 25% / 0.3) 1px, transparent 1px);
+      linear-gradient(hsl(210 40% 50% / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(210 40% 50% / 0.5) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 

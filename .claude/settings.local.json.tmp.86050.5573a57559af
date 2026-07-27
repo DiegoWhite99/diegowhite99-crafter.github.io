@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Skill(run)",
-      "Bash(git add *)",
-      "Bash(git commit -m 'Aumentar visibilidad de la cuadrícula animada *)"
-    ]
-  }
-}
