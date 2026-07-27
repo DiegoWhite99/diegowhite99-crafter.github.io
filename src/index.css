@@ -154,15 +154,15 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 80% 60% / 0.15) 0px,
-        hsl(210 80% 60% / 0.15) 1px,
+        hsl(210 80% 60% / 0.35) 0px,
+        hsl(210 80% 60% / 0.35) 1px,
         transparent 1px,
         transparent 50px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 80% 60% / 0.15) 0px,
-        hsl(210 80% 60% / 0.15) 1px,
+        hsl(210 80% 60% / 0.35) 0px,
+        hsl(210 80% 60% / 0.35) 1px,
         transparent 1px,
         transparent 50px
       );
@@ -181,8 +181,8 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         45deg,
-        hsl(210 100% 50% / 0.1) 0px,
-        hsl(210 100% 50% / 0.1) 2px,
+        hsl(210 100% 50% / 0.2) 0px,
+        hsl(210 100% 50% / 0.2) 2px,
         transparent 2px,
         transparent 100px
       );
@@ -211,15 +211,15 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 80% 70% / 0.2) 0px,
-        hsl(210 80% 70% / 0.2) 1px,
+        hsl(210 80% 70% / 0.3) 0px,
+        hsl(210 80% 70% / 0.3) 1px,
         transparent 1px,
         transparent 50px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 80% 70% / 0.2) 0px,
-        hsl(210 80% 70% / 0.2) 1px,
+        hsl(210 80% 70% / 0.3) 0px,
+        hsl(210 80% 70% / 0.3) 1px,
         transparent 1px,
         transparent 50px
       );
@@ -229,8 +229,8 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         45deg,
-        hsl(210 100% 55% / 0.12) 0px,
-        hsl(210 100% 55% / 0.12) 2px,
+        hsl(210 100% 55% / 0.2) 0px,
+        hsl(210 100% 55% / 0.2) 2px,
         transparent 2px,
         transparent 100px
       );
