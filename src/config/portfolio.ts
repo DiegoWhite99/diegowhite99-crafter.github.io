@@ -141,6 +141,7 @@ const content = {
       {
         title: "ETL — Data Analysis Pipeline",
         description: "An ETL pipeline built with Python and SQL to extract, transform, and load data for analysis — automating cleanup and reporting over structured datasets.",
+        image: "/etl.jpg",
         technologies: ["Python", "SQL", "Pandas", "ETL"],
         github: "https://github.com/DiegoWhite99/ETL",
       },
@@ -285,6 +286,7 @@ const content = {
       {
         title: "ETL — Pipeline de Análisis de Datos",
         description: "Un pipeline ETL construido con Python y SQL para extraer, transformar y cargar datos para su análisis — automatizando la limpieza y los reportes sobre conjuntos de datos estructurados.",
+        image: "/etl.jpg",
         technologies: ["Python", "SQL", "Pandas", "ETL"],
         github: "https://github.com/DiegoWhite99/ETL",
       },
