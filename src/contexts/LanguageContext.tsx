@@ -33,7 +33,8 @@ const translations = {
     'skills.title': 'Skills & Technologies',
     'skills.frontend': 'Frontend',
     'skills.backend': 'Backend',
-    'skills.tools': 'Tools & Others',
+    'skills.tools': 'Tools',
+    'skills.roboticsai': 'Robotics & AI',
     
     // Contact section
     'contact.title': 'Get In Touch',
@@ -90,7 +91,8 @@ const translations = {
     'skills.title': 'Habilidades y Tecnologías',
     'skills.frontend': 'Frontend',
     'skills.backend': 'Backend',
-    'skills.tools': 'Herramientas y Otros',
+    'skills.tools': 'Herramientas',
+    'skills.roboticsai': 'Robótica e IA',
     
     // Contact section
     'contact.title': 'Contáctame',
