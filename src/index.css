@@ -143,44 +143,97 @@ All colors MUST be HSL.
     overflow-x: hidden;
   }
 
-  /* Clean Grid Background with Animation - SUPER VISIBLE */
+  /* Grid Background */
   body::before {
     content: '';
     position: fixed;
     top: 0;
     left: 0;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     background-image:
-      linear-gradient(hsl(210 100% 55% / 0.8) 2px, transparent 2px),
-      linear-gradient(90deg, hsl(210 100% 55% / 0.8) 2px, transparent 2px);
-    background-size: 50px 50px;
+      repeating-linear-gradient(
+        0deg,
+        hsl(210 80% 60% / 0.15) 0px,
+        hsl(210 80% 60% / 0.15) 1px,
+        transparent 1px,
+        transparent 50px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        hsl(210 80% 60% / 0.15) 0px,
+        hsl(210 80% 60% / 0.15) 1px,
+        transparent 1px,
+        transparent 50px
+      );
     pointer-events: none;
-    z-index: 1;
-    animation: gridFlow 10s linear infinite;
+    z-index: 0;
   }
 
-  @keyframes gridFlow {
+  /* Animated grid effect */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        hsl(210 100% 50% / 0.1) 0px,
+        hsl(210 100% 50% / 0.1) 2px,
+        transparent 2px,
+        transparent 100px
+      );
+    pointer-events: none;
+    z-index: 0;
+    animation: gridShift 8s linear infinite;
+  }
+
+  @keyframes gridShift {
     0% {
       transform: translate(0, 0);
     }
     100% {
-      transform: translate(50px, 50px);
+      transform: translate(100px, 100px);
     }
   }
 
   /* Ensure content is above grid */
   #root {
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
 
   /* Dark mode grid background */
   .dark body::before {
     background-image:
-      linear-gradient(hsl(210 80% 50% / 0.7) 2px, transparent 2px),
-      linear-gradient(90deg, hsl(210 80% 50% / 0.7) 2px, transparent 2px);
-    background-size: 50px 50px;
+      repeating-linear-gradient(
+        0deg,
+        hsl(210 80% 70% / 0.2) 0px,
+        hsl(210 80% 70% / 0.2) 1px,
+        transparent 1px,
+        transparent 50px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        hsl(210 80% 70% / 0.2) 0px,
+        hsl(210 80% 70% / 0.2) 1px,
+        transparent 1px,
+        transparent 50px
+      );
+  }
+
+  .dark body::after {
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        hsl(210 100% 55% / 0.12) 0px,
+        hsl(210 100% 55% / 0.12) 2px,
+        transparent 2px,
+        transparent 100px
+      );
   }
 
   /* Smooth Transitions */
