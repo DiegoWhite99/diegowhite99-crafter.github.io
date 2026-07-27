@@ -80,7 +80,7 @@ const content = {
       subtitle: "Building ideas with code, automation, and AI",
       greeting: "Hello, I'm",
       profilePhoto: "/profile-photo.jpeg",
-      cvUrl: "/Diego_Fernando_Castelblanco_CV.pdf"
+      cvUrl: "https://drive.google.com/file/d/11uOBl2ulEVZqe71xG5nPw0Mq2UtiyItg/view?usp=drive_link"
     },
     about: {
       description: "Systems Engineer with experience in frontend and backend web development, IT support, Linux systems administration, databases, and automation. Currently working as an AI Agent at Divergency IA – CUN, developing applied robotics and AI projects with ROS 2, computer vision (ORB-SLAM3), and conversational AI integrated into robotic platforms (Unitree Go2).",
@@ -200,7 +200,7 @@ const content = {
       subtitle: "Construyendo ideas con código, automatización e IA",
       greeting: "Hola, soy",
       profilePhoto: "/profile-photo.jpeg",
-      cvUrl: "/Diego_Fernando_Castelblanco_CV.pdf"
+      cvUrl: "https://drive.google.com/file/d/11uOBl2ulEVZqe71xG5nPw0Mq2UtiyItg/view?usp=drive_link"
     },
     about: {
       description: "Ingeniero de Sistemas con experiencia en desarrollo web frontend y backend, soporte IT, administración de sistemas Linux, bases de datos y automatización. Actualmente trabajo como AI Agent en Divergency IA – CUN, desarrollando proyectos aplicados de robótica e IA con ROS 2, visión por computadora (ORB-SLAM3) e IA conversacional integrada en plataformas robóticas (Unitree Go2).",
