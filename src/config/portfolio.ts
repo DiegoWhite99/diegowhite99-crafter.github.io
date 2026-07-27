@@ -1,5 +1,3 @@
-import { Icon } from "lucide-react";
-
 export interface PortfolioConfig {
   // Personal Information
   personal: {
@@ -39,10 +37,10 @@ export interface PortfolioConfig {
   projects: Array<{
     title: string;
     description: string;
-    image: string;
+    image?: string;
     technologies: string[];
     github: string;
-    demo: string;
+    demo?: string;
   }>;
 
   // Skills
@@ -93,7 +91,7 @@ const content = {
         },
         {
           icon: "Users",
-          title: "7 Projects",
+          title: "8 Projects",
           description: "projects"
         },
         {
@@ -139,6 +137,30 @@ const content = {
         image: "/project-smed.jpg",
         technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Node.js", "MySQL", "GLPI"],
         github: "https://github.com/DiegoWhite99/SMED-TECHNOLOGY",
+      },
+      {
+        title: "ETL — Data Analysis Pipeline",
+        description: "An ETL pipeline built with Python and SQL to extract, transform, and load data for analysis — automating cleanup and reporting over structured datasets.",
+        technologies: ["Python", "SQL", "Pandas", "ETL"],
+        github: "https://github.com/DiegoWhite99/ETL",
+      },
+      {
+        title: "Kenko Wellness",
+        description: "Web platform for a health and martial-arts wellness project, built with Laravel (Blade) — memberships, class scheduling, and a clean member-facing experience.",
+        technologies: ["Laravel", "PHP", "Blade", "MySQL"],
+        github: "https://github.com/DiegoWhite99/Kenko-Wellness",
+      },
+      {
+        title: "SMED Chatbot",
+        description: "A conversational chatbot for SMED Technology that automates customer inquiries and support flows, integrating scripted and AI-assisted responses.",
+        technologies: ["JavaScript", "Node.js", "Chatbot", "Automation"],
+        github: "https://github.com/DiegoWhite99/ChatBoot-Smed",
+      },
+      {
+        title: "Bank UI — Frontend Simulation",
+        description: "A responsive web interface simulating an online banking dashboard, focused on layout, componentization, and a polished, accessible UI.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        github: "https://github.com/DiegoWhite99/Banco-C-T",
       }
     ],
       skills: {
@@ -213,7 +235,7 @@ const content = {
         },
         {
           icon: "Users",
-          title: "7 Proyectos",
+          title: "8 Proyectos",
           description: "projects"
         },
         {
@@ -242,7 +264,7 @@ const content = {
         description: "Proyecto de SLAM y navegación autónoma con el robot Unitree Go2. Configuré ORB-SLAM3 en ROS 2 Humble para mapeo y localización en tiempo real, e integré IA conversacional en la plataforma robótica a través de WebRTC.",
         image: "/unitree.webp",
         technologies: ["ROS 2", "ORB-SLAM3", "WebRTC", "Python", "Linux"],
-        github: "https://github.com/DiegoWhite99/robotics-unitree",
+        github: "https://github.com/DiegoWhite99/Unitreego2",
         demo: "#"
       },
       {
@@ -250,7 +272,7 @@ const content = {
         description: "Servidor Linux autohospedado (CasaOS) ejecutando Docker, n8n, Ollama y MariaDB, con acceso remoto seguro a través de Tailscale — potenciando automatización interna y un agente de IA personalizado en Telegram.",
         image: "/smedblog.png",
         technologies: ["Linux", "Docker", "n8n", "Ollama", "Tailscale"],
-        github: "https://github.com/DiegoWhite99/smed-server",
+        github: "https://github.com/DiegoWhite99/CRM-SMED",
         demo: "#"
       },
       {
@@ -259,6 +281,30 @@ const content = {
         image: "/project-smed.jpg",
         technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Node.js", "MySQL", "GLPI"],
         github: "https://github.com/DiegoWhite99/SMED-TECHNOLOGY",
+      },
+      {
+        title: "ETL — Pipeline de Análisis de Datos",
+        description: "Un pipeline ETL construido con Python y SQL para extraer, transformar y cargar datos para su análisis — automatizando la limpieza y los reportes sobre conjuntos de datos estructurados.",
+        technologies: ["Python", "SQL", "Pandas", "ETL"],
+        github: "https://github.com/DiegoWhite99/ETL",
+      },
+      {
+        title: "Kenko Wellness",
+        description: "Plataforma web para un proyecto de salud y artes marciales, construida con Laravel (Blade) — membresías, agenda de clases y una experiencia limpia para los miembros.",
+        technologies: ["Laravel", "PHP", "Blade", "MySQL"],
+        github: "https://github.com/DiegoWhite99/Kenko-Wellness",
+      },
+      {
+        title: "Chatbot SMED",
+        description: "Un chatbot conversacional para SMED Technology que automatiza consultas y flujos de soporte al cliente, integrando respuestas guiadas y asistidas por IA.",
+        technologies: ["JavaScript", "Node.js", "Chatbot", "Automatización"],
+        github: "https://github.com/DiegoWhite99/ChatBoot-Smed",
+      },
+      {
+        title: "UI Bancaria — Simulación Frontend",
+        description: "Una interfaz web responsiva que simula el panel de un banco en línea, enfocada en el layout, la componentización y una UI pulida y accesible.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        github: "https://github.com/DiegoWhite99/Banco-C-T",
       }
     ],
     skills: {
@@ -348,7 +394,7 @@ export const portfolioConfig: PortfolioConfig = {
       },
       {
         icon: "Users",
-        title: "7 Projects",
+        title: "8 Projects",
         description: "Successfully Delivered"
       },
       {

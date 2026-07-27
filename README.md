@@ -1,261 +1,104 @@
-# Portfolio Template
+# Diego Castelblanco — Portfolio
 
-A modern, responsive portfolio website template built with React, TypeScript, Tailwind CSS, and Vite. This template is designed to be easily customizable and ready to deploy.
+Personal portfolio of **Diego Castelblanco**, Systems Engineer specializing in
+web development, automation, and applied AI/robotics (ROS 2, computer vision,
+conversational AI). Built with React, TypeScript, Tailwind CSS and Vite.
+
+🔗 **Live:** https://diegowhite99-crafter.github.io
 
 ## Features
 
-- 🎨 Modern and responsive design
-- 🌙 Dark/Light theme support
-- 🌍 Multi-language support (English/Spanish)
-- 📱 Mobile-first approach
-- ⚡ Fast performance with Vite
-- 🎯 SEO optimized
-- 📧 Contact form
-- 🔧 Fully configurable
+- ⚡ Fast, single-page site powered by Vite
+- 🌗 Light / dark theme
+- 🌍 Bilingual content (English / Spanish)
+- 📱 Responsive, mobile-first layout
+- 🧩 Content-driven — all copy lives in one config file
+- ✨ Subtle grid backdrop + motion, with `prefers-reduced-motion` support
+- 📧 Working contact form via EmailJS
+- 🚀 Auto-deployed to GitHub Pages via GitHub Actions
 
 ## Tech Stack
 
-- **React 18** - UI library
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
-- **Vite** - Build tool
-- **React Router** - Navigation
-- **Lucide React** - Icons
-- **Radix UI** - Accessible components
-- **React Query** - Data fetching
+| Area | Tools |
+| --- | --- |
+| UI | React 18, TypeScript |
+| Styling | Tailwind CSS, Radix UI (shadcn/ui) |
+| Build | Vite |
+| Icons | lucide-react |
+| Data/Forms | TanStack Query, EmailJS |
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js 18+ 
-- npm, yarn, or bun
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd portfolio-template
-```
-
-2. Install dependencies:
-```bash
+git clone https://github.com/DiegoWhite99/diegowhite99-crafter.github.io.git
+cd diegowhite99-crafter.github.io
 npm install
-# or
-yarn install
-# or
-bun install
-```
-
-3. Start the development server:
-```bash
 npm run dev
-# or
-yarn dev
-# or
-bun dev
 ```
 
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+Then open the URL Vite prints (default http://localhost:8080).
 
-### Quick Setup
+### Scripts
 
-Run the interactive setup script to quickly configure your portfolio:
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Production build to `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
+
+## Editing Content
+
+Almost everything on the site is driven by **`src/config/portfolio.ts`**, which
+holds `en` and `es` versions of the personal info, about section, projects and
+skills. Update that file to change what the site shows — no component edits
+needed for normal content changes.
+
+UI labels (buttons, nav, section titles) live in
+`src/contexts/LanguageContext.tsx`.
+
+### Contact form (EmailJS)
+
+The contact form sends messages through [EmailJS](https://www.emailjs.com).
+Configuration is read from environment variables (`VITE_` prefixed, so they are
+embedded in the client bundle — EmailJS relies on domain restrictions, these are
+not secret):
 
 ```bash
-npm run setup
-```
-
-This will guide you through entering your personal information and automatically generate the configuration file.
-
-## Configuration
-
-All personal data is stored in the configuration file at `src/config/portfolio.ts`. Update this file with your information:
-
-### Personal Information
-
-```typescript
-personal: {
-  name: "Your Name",
-  title: "Your Title",
-  subtitle: "Your Subtitle",
-  greeting: "Hello, I'm",
-  profilePhoto: "/path/to/your/photo.jpg",
-  cvUrl: "/path/to/your/cv.pdf" // Optional
-}
-```
-
-### Contact Information
-
-```typescript
-contact: {
-  email: "your.email@example.com",
-  phone: "+1 (555) 123-4567",
-  location: "Your City, Country",
-  social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername", // Optional
-    instagram: "https://instagram.com/yourusername" // Optional
-  }
-}
-```
-
-### EmailJS (Contact form)
-
-This project uses EmailJS to send contact form messages to your email. Steps:
-
-1. Create a free account at https://www.emailjs.com
-2. Add an Email Service (e.g., Gmail) and note the *Service ID*.
-3. Create an Email Template and note the *Template ID*. Use template variables: `from_name`, `from_email`, `message`, `to_email`.
-4. In EmailJS dashboard get your *Public Key* (also called *User ID*).
-5. Create a `.env` in the project root (do NOT commit it) and set:
-
-```
+# .env
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-6. Install deps and run:
-
-```bash
-npm install
-npm run dev
-```
-
-By default messages will be sent to `diegofer.cas.99@gmail.com`. To change the recipient, edit `src/components/Contact.tsx`.
-
-### About Section
-
-```typescript
-about: {
-  description: "Your description here...",
-  experience: "Your experience description...",
-  highlights: [
-    {
-      icon: "Code2", // Lucide React icon name
-      title: "5+ Years",
-      description: "Professional Experience"
-    }
-    // Add more highlights...
-  ]
-}
-```
-
-### Projects
-
-```typescript
-projects: [
-  {
-    title: "Project Title",
-    description: "Project description...",
-    image: "/path/to/project/image.jpg",
-    technologies: ["React", "TypeScript", "Node.js"],
-    github: "https://github.com/yourusername/project",
-    demo: "https://project-demo.vercel.app"
-  }
-  // Add more projects...
-]
-```
-
-### Skills
-
-```typescript
-skills: {
-  categories: [
-    {
-      title: "Frontend",
-      skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 }
-        // Add more skills...
-      ]
-    }
-    // Add more categories...
-  ],
-  technologies: ["React", "TypeScript", "Node.js"] // Technology badges
-}
-```
-
-## Customization
-
-### Styling
-
-The template uses Tailwind CSS for styling. You can customize the design by:
-
-1. Modifying the color scheme in `tailwind.config.ts`
-2. Updating CSS variables in `src/index.css`
-3. Adding custom classes to components
-
-### Adding New Sections
-
-1. Create a new component in `src/components/`
-2. Add it to the main page in `src/pages/Index.tsx`
-3. Update the navigation if needed
-
-### Adding New Languages
-
-1. Add translations to `src/contexts/LanguageContext.tsx`
-2. Update the language selector component
+See `.env.example` for the template. Messages default to the address configured
+in `src/components/Contact.tsx`.
 
 ## Deployment
 
-### Vercel (Recommended)
+The site deploys automatically to **GitHub Pages** through the workflow in
+`.github/workflows/`. Pushing to `main` builds the project and publishes `dist/`.
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
+To build locally:
 
-### Netlify
-
-1. Build the project: `npm run build`
-2. Upload the `dist` folder to Netlify
-
-### Other Platforms
-
-The template works with any static hosting service. Just run `npm run build` and upload the `dist` folder.
+```bash
+npm run build
+```
 
 ## Project Structure
 
 ```
 src/
-├── components/          # React components
-│   ├── ui/             # Reusable UI components
-│   ├── About.tsx       # About section
-│   ├── Contact.tsx     # Contact section
-│   ├── Footer.tsx      # Footer
-│   ├── Header.tsx      # Navigation header
-│   ├── Hero.tsx        # Hero section
-│   ├── Projects.tsx    # Projects section
-│   └── Skills.tsx      # Skills section
-├── config/             # Configuration files
-│   └── portfolio.ts    # Main portfolio configuration
-├── contexts/           # React contexts
-│   ├── LanguageContext.tsx
-│   └── ThemeContext.tsx
-├── hooks/              # Custom React hooks
-├── lib/                # Utility functions
-├── pages/              # Page components
-└── assets/             # Static assets
+├── components/        # Section components (Hero, About, Projects, Skills, Contact…)
+│   └── ui/            # shadcn/ui primitives
+├── config/
+│   └── portfolio.ts   # All site content (EN/ES)
+├── contexts/          # Language & theme providers
+├── hooks/             # Custom hooks
+├── pages/             # Route pages
+└── index.css          # Design tokens, grid backdrop & animations
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## Support
-
-If you have any questions or need help, please open an issue on GitHub.
-
----
-
-Made with ❤️ using React & TypeScript
+MIT — see [LICENSE](LICENSE).

@@ -36,12 +36,12 @@ export function Skills() {
                           <span className="font-medium text-foreground">{skill.name}</span>
                           <span className="text-sm text-muted-foreground">{skill.level}%</span>
                         </div>
-                        <div className="w-full bg-muted rounded-full h-2">
-                          <div 
-                            className="bg-gradient-accent h-2 rounded-full transition-all duration-1000 ease-out"
-                            style={{ 
+                        <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+                          <div
+                            className="skill-bar-fill bg-gradient-accent h-2 rounded-full"
+                            style={{
                               width: `${skill.level}%`,
-                              animationDelay: `${skillIndex * 0.1}s`
+                              animationDelay: `${skillIndex * 0.08}s`
                             }}
                           />
                         </div>
