@@ -143,7 +143,7 @@ All colors MUST be HSL.
     overflow-x: hidden;
   }
 
-  /* Grid Background */
+  /* Grid Background - VISIBLE */
   body::before {
     content: '';
     position: fixed;
@@ -154,16 +154,16 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 80% 60% / 0.35) 0px,
-        hsl(210 80% 60% / 0.35) 1px,
-        transparent 1px,
+        hsl(210 100% 60% / 0.5) 0px,
+        hsl(210 100% 60% / 0.5) 2px,
+        transparent 2px,
         transparent 50px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 80% 60% / 0.35) 0px,
-        hsl(210 80% 60% / 0.35) 1px,
-        transparent 1px,
+        hsl(210 100% 60% / 0.5) 0px,
+        hsl(210 100% 60% / 0.5) 2px,
+        transparent 2px,
         transparent 50px
       );
     pointer-events: none;
@@ -211,16 +211,16 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 80% 70% / 0.3) 0px,
-        hsl(210 80% 70% / 0.3) 1px,
-        transparent 1px,
+        hsl(210 100% 50% / 0.45) 0px,
+        hsl(210 100% 50% / 0.45) 2px,
+        transparent 2px,
         transparent 50px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 80% 70% / 0.3) 0px,
-        hsl(210 80% 70% / 0.3) 1px,
-        transparent 1px,
+        hsl(210 100% 50% / 0.45) 0px,
+        hsl(210 100% 50% / 0.45) 2px,
+        transparent 2px,
         transparent 50px
       );
   }
