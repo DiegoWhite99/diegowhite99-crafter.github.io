@@ -135,18 +135,19 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 60% 50% / 0.15) 0px,
-        hsl(210 60% 50% / 0.15) 1px,
+        hsl(210 100% 50% / 0.2) 0px,
+        hsl(210 100% 50% / 0.2) 1px,
         transparent 1px,
-        transparent 50px
+        transparent 40px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 60% 50% / 0.15) 0px,
-        hsl(210 60% 50% / 0.15) 1px,
+        hsl(210 100% 50% / 0.2) 0px,
+        hsl(210 100% 50% / 0.2) 1px,
         transparent 1px,
-        transparent 50px
-      );
+        transparent 40px
+      ) !important;
+    background-attachment: fixed !important;
   }
 }
 
@@ -162,19 +163,19 @@ All colors MUST be HSL.
     background-image:
       repeating-linear-gradient(
         0deg,
-        hsl(210 40% 70% / 0.2) 0px,
-        hsl(210 40% 70% / 0.2) 1px,
+        hsl(210 100% 50% / 0.2) 0px,
+        hsl(210 100% 50% / 0.2) 1px,
         transparent 1px,
-        transparent 50px
+        transparent 40px
       ),
       repeating-linear-gradient(
         90deg,
-        hsl(210 40% 70% / 0.2) 0px,
-        hsl(210 40% 70% / 0.2) 1px,
+        hsl(210 100% 50% / 0.2) 0px,
+        hsl(210 100% 50% / 0.2) 1px,
         transparent 1px,
-        transparent 50px
-      );
-    background-attachment: fixed;
+        transparent 40px
+      ) !important;
+    background-attachment: fixed !important;
   }
 
   /* Animated grid effect */
