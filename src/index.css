@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 */
 
@@ -143,7 +143,7 @@ All colors MUST be HSL.
     overflow-x: hidden;
   }
 
-  /* Elegant Matrix Background - Subtle Grid with Dots */
+  /* Clean Grid Background - White/Light */
   body::before {
     content: '';
     position: fixed;
@@ -152,21 +152,11 @@ All colors MUST be HSL.
     width: 100%;
     height: 100%;
     background-image:
-      radial-gradient(circle, hsl(210 80% 60% / 0.15) 1px, transparent 1px);
-    background-size: 50px 50px;
-    background-position: 0 0;
+      linear-gradient(hsl(210 20% 90% / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(210 20% 90% / 0.4) 1px, transparent 1px);
+    background-size: 40px 40px;
     pointer-events: none;
     z-index: 1;
-    animation: gridFlow 20s linear infinite;
-  }
-
-  @keyframes gridFlow {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 50px 50px;
-    }
   }
 
   /* Ensure content is above grid */
@@ -175,63 +165,12 @@ All colors MUST be HSL.
     z-index: 2;
   }
 
-  /* Dark mode matrix background */
+  /* Dark mode grid background */
   .dark body::before {
     background-image:
-      radial-gradient(circle, hsl(210 100% 55% / 0.12) 1.5px, transparent 1.5px);
-    background-size: 50px 50px;
-  }
-
-  /* Section Animations - Removed to keep sections visible */
-  section {
-    opacity: 1;
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Card Hover Animation */
-  .group:hover {
-    animation: cardPulse 0.4s ease-out;
-  }
-
-  @keyframes cardPulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.02);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  /* Gradient Text Animation */
-  .bg-gradient-primary,
-  .bg-gradient-accent {
-    animation: gradientShift 6s ease-in-out infinite;
-    background-size: 200% 200%;
-  }
-
-  @keyframes gradientShift {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+      linear-gradient(hsl(210 40% 25% / 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(210 40% 25% / 0.2) 1px, transparent 1px);
+    background-size: 40px 40px;
   }
 
   /* Smooth Transitions */
@@ -244,99 +183,22 @@ All colors MUST be HSL.
     box-shadow: 0 0 20px hsl(210 100% 50% / 0.4);
   }
 
-  /* Input Focus Animation */
+  /* Input Focus */
   input:focus {
-    animation: inputFocus 0.4s ease-out;
+    box-shadow: 0 0 10px hsl(210 100% 50% / 0.3);
   }
 
-  @keyframes inputFocus {
-    0% {
-      box-shadow: 0 0 0px hsl(210 100% 50% / 0);
-    }
-    100% {
-      box-shadow: 0 0 10px hsl(210 100% 50% / 0.3);
-    }
+  /* Icon transitions */
+  svg {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* Text animations - visible by default */
-  h1, h2, h3, h4, h5, h6 {
-    animation: slideInDown 0.8s ease-out forwards;
+  a:hover svg {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 5px 15px hsl(210 100% 50% / 0.3));
   }
 
-  @keyframes slideInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  p {
-    animation: slideInUp 0.8s ease-out forwards;
-  }
-
-  @keyframes slideInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Staggered animation for multiple elements */
-  h1 { animation-delay: 0.05s; }
-  h2 { animation-delay: 0.1s; }
-  h3 { animation-delay: 0.08s; }
-  h4 { animation-delay: 0.1s; }
-  h5 { animation-delay: 0.12s; }
-  h6 { animation-delay: 0.15s; }
-
-  p { animation-delay: 0.15s; }
-
-  /* Card entrance animation */
-  .rounded-lg {
-    animation: cardEntrance 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-    opacity: 0;
-  }
-
-  @keyframes cardEntrance {
-    from {
-      opacity: 0;
-      transform: translateY(30px) scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }
-
-  /* Skill bar animation */
-  .bg-gradient-accent {
-    animation: barFill 1.2s ease-out forwards;
-    width: 0 !important;
-  }
-
-  @keyframes barFill {
-    from {
-      width: 0 !important;
-    }
-    to {
-      width: inherit !important;
-    }
-  }
-
-  /* Project hover effect */
-  .group:hover .relative {
-    animation: none;
-  }
-
-  /* Subtle floating animation for profile photo */
+  /* Floating image effect */
   img[alt="Profile"] {
     animation: float 3s ease-in-out infinite;
   }
@@ -348,317 +210,5 @@ All colors MUST be HSL.
     50% {
       transform: translateY(-10px);
     }
-  }
-
-  /* Button ripple effect on click */
-  @keyframes ripple {
-    to {
-      transform: scale(4);
-      opacity: 0;
-    }
-  }
-
-  button {
-    position: relative;
-    overflow: hidden;
-  }
-
-  button::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 1px;
-    background: hsl(210 100% 50% / 0.5);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  button:active::after {
-    animation: ripple 0.6s ease-out;
-  }
-
-  /* Icon animations */
-  svg {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  a:hover svg {
-    transform: translateY(-3px);
-    filter: drop-shadow(0 5px 15px hsl(210 100% 50% / 0.3));
-  }
-
-  /* Scroll reveal animations */
-  @keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  .animate-slide-in {
-    animation: slideInUp 0.8s ease-out forwards !important;
-  }
-
-  .animate-fade-in {
-    animation: fadeInUp 0.8s ease-out forwards !important;
-  }
-
-  /* Badge/Chip entrance animation - visible by default */
-  .px-4 {
-    animation: badgeEntrance 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  @keyframes badgeEntrance {
-    from {
-      opacity: 0;
-      transform: scale(0.8) translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1) translateY(0);
-    }
-  }
-
-  /* Staggered badge animation - shorter delays */
-  .px-4:nth-child(1) { animation-delay: 0.05s; }
-  .px-4:nth-child(2) { animation-delay: 0.1s; }
-  .px-4:nth-child(3) { animation-delay: 0.15s; }
-  .px-4:nth-child(4) { animation-delay: 0.2s; }
-  .px-4:nth-child(5) { animation-delay: 0.25s; }
-  .px-4:nth-child(6) { animation-delay: 0.3s; }
-  .px-4:nth-child(7) { animation-delay: 0.35s; }
-  .px-4:nth-child(8) { animation-delay: 0.4s; }
-
-  /* Glow effect on hover for badges */
-  .px-4:hover {
-    animation: badgeGlow 0.4s ease-out forwards;
-    box-shadow: 0 0 20px hsl(210 100% 50% / 0.5) !important;
-  }
-
-  @keyframes badgeGlow {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1.05);
-    }
-  }
-
-  /* Number counter animation */
-  h3, .text-2xl, .text-3xl {
-    animation: numberPulse 2s ease-in-out;
-  }
-
-  @keyframes numberPulse {
-    0%, 100% {
-      color: hsl(210 100% 50%);
-    }
-    50% {
-      color: hsl(210 100% 60%);
-    }
-  }
-
-  /* Shine effect */
-  @keyframes shine {
-    0% {
-      background-position: -1000px 0;
-    }
-    100% {
-      background-position: 1000px 0;
-    }
-  }
-
-  button {
-    background-size: 1000px 100%;
-  }
-
-  button:hover {
-    animation: shine 0.8s ease-in-out;
-  }
-
-  /* Text reveal animation */
-  @keyframes textReveal {
-    from {
-      background-position: 100% 0;
-    }
-    to {
-      background-position: -100% 0;
-    }
-  }
-
-  h1 {
-    background: linear-gradient(90deg, hsl(210 100% 50%), hsl(200 100% 55%), hsl(210 100% 50%));
-    background-size: 200% 100%;
-    animation: textReveal 3s ease-in-out infinite;
-  }
-
-  /* Scale up animation for titles */
-  h2 {
-    animation: scaleUpTitle 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  @keyframes scaleUpTitle {
-    from {
-      opacity: 0;
-      transform: scale(0.8) translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1) translateY(0);
-    }
-  }
-
-  /* Bounce animation for icons */
-  svg:hover {
-    animation: iconBounce 0.6s ease-out;
-  }
-
-  @keyframes iconBounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-8px);
-    }
-  }
-
-  /* Rotate animation on hover */
-  .group:hover svg {
-    animation: rotateIcon 0.6s ease-out forwards;
-  }
-
-  @keyframes rotateIcon {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  /* Pulse glow animation */
-  @keyframes pulseGlow {
-    0%, 100% {
-      box-shadow: 0 0 0 0 hsl(210 100% 50% / 0.7);
-    }
-    50% {
-      box-shadow: 0 0 0 10px hsl(210 100% 50% / 0);
-    }
-  }
-
-  button:active {
-    animation: pulseGlow 0.6s;
-  }
-
-  /* Slide in from sides */
-  .flex-1 {
-    animation: slideInFromLeft 0.8s ease-out forwards;
-  }
-
-  @keyframes slideInFromLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  /* Fade and scale for images */
-  img {
-    animation: imageReveal 1s ease-out forwards;
-  }
-
-  @keyframes imageReveal {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  /* Shimmer loading effect */
-  @keyframes shimmer {
-    0% {
-      background-position: -1000px 0;
-    }
-    100% {
-      background-position: 1000px 0;
-    }
-  }
-
-  /* Bounce in animation */
-  @keyframes bounceIn {
-    0% {
-      opacity: 0;
-      transform: scale(0.3);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.05);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  .border {
-    animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-  }
-
-  /* Gradient animation for text */
-  @keyframes gradientText {
-    0%, 100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-  }
-
-  .bg-clip-text {
-    animation: gradientText 6s ease infinite;
-  }
-
-  /* Smooth scroll animations */
-  @keyframes slideInBottom {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .max-w-6xl {
-    animation: slideInBottom 0.8s ease-out forwards;
   }
 }

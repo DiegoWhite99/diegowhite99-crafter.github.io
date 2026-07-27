@@ -120,7 +120,7 @@ const content = {
       {
         title: "Robotics & Applied AI — Unitree Go2",
         description: "SLAM and autonomous navigation project with the Unitree Go2 robot. Configured ORB-SLAM3 on ROS 2 Humble for real-time mapping and localization, and integrated conversational AI into the robotic platform via WebRTC.",
-        image: "/project-robotics.png",
+        image: "/project-unitree.jpg",
         technologies: ["ROS 2", "ORB-SLAM3", "WebRTC", "Python", "Linux"],
         github: "https://github.com/DiegoWhite99/robotics-unitree",
         demo: "#"
@@ -128,7 +128,7 @@ const content = {
       {
         title: "Internal Services Server — SMED Technology",
         description: "Deployed and maintain a self-hosted Linux server (CasaOS) running Docker, n8n, Ollama, and MariaDB, with secure remote access via Tailscale — powering internal automation and a custom Telegram AI agent.",
-        image: "/project-server.png",
+        image: "/project-blogsmed.jpg",
         technologies: ["Linux", "Docker", "n8n", "Ollama", "Tailscale"],
         github: "https://github.com/DiegoWhite99/smed-server",
         demo: "#"
@@ -240,7 +240,7 @@ const content = {
       {
         title: "Robótica e IA Aplicada — Unitree Go2",
         description: "Proyecto de SLAM y navegación autónoma con el robot Unitree Go2. Configuré ORB-SLAM3 en ROS 2 Humble para mapeo y localización en tiempo real, e integré IA conversacional en la plataforma robótica a través de WebRTC.",
-        image: "/project-robotics.png",
+        image: "/project-unitree.jpg",
         technologies: ["ROS 2", "ORB-SLAM3", "WebRTC", "Python", "Linux"],
         github: "https://github.com/DiegoWhite99/robotics-unitree",
         demo: "#"
@@ -248,7 +248,7 @@ const content = {
       {
         title: "Servidor de Servicios Internos — SMED Technology",
         description: "Servidor Linux autohospedado (CasaOS) ejecutando Docker, n8n, Ollama y MariaDB, con acceso remoto seguro a través de Tailscale — potenciando automatización interna y un agente de IA personalizado en Telegram.",
-        image: "/project-server.png",
+        image: "/project-blogsmed.jpg",
         technologies: ["Linux", "Docker", "n8n", "Ollama", "Tailscale"],
         github: "https://github.com/DiegoWhite99/smed-server",
         demo: "#"
